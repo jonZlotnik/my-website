@@ -1,0 +1,240 @@
+/*--- Font Initialization ---*/
+@font-face
+{
+    font-family: Agency;
+    src: url(fonts/AGENCYR.TTF);
+}
+@font-face
+{
+    font-family: Agency;
+    src: url(fonts/AGENCYB.TTF);
+    font-weight: bold;
+}
+@font-face
+{
+	font-family: Corsiva;
+	src: url(fonts/MTCORSVA.TFF);
+}
+@font-face
+{
+	font-family: Algerian;
+	src: url(fonts/ALGER.TFF);
+}
+/*--- Font Initialization ---*/
+
+
+
+/*--- Default Tag Styles ---*/
+body
+{
+	margin: 0;
+	font-family: Agency;
+	overflow-y: hidden;
+	font-size: 2.5vh;
+	background: white	;
+	height: 100%;
+}
+div
+{
+	box-sizing: border-box;
+}
+h1 
+{
+	margin: 0;
+	text-align: center;
+	font-size: 4vh;
+}
+h2
+{
+	font-size: 3.5vh;
+}
+h3
+{
+	font-size: 2.75vh;
+}
+/*--- Default Tag Styles ---*/
+
+
+
+/*--- Footer Navigation ---*/
+.nav
+{
+	position: fixed;
+	bottom: 0;
+	height: 10%;
+	width: 100%;
+	min-width: 350px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	background: rgb(50,50,50);
+	color: white;
+	/*box-shadow: 0 0 10px black;*/
+	padding: 0;
+}
+.navBTN
+{
+	margin: 1vh 0.5em 1vh 0.5em;
+	height: 8vh;
+	cursor: pointer;
+	padding: 2.5vh 2em 2.5vh 2em;
+	border: white thin solid;
+	box-sizing: border-box;
+	font-size: 2.5vh;
+	box-shadow: 0 0 5px black;
+	border-radius: 3px;
+}
+.navBTN:hover
+{
+	background: rgba(0,0,0,0.5);
+}
+#infoBTN a:link
+{
+	color: white;
+}
+.navTitle
+{
+	color: white;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	text-shadow: 1px 2px 3px black;
+}
+#contact
+{
+	text-align: center;
+	font-size: 2.125vh;
+}
+/*--- Footer Navigation ---*/
+
+
+
+/*--- Home Page ---*/
+.homeScreen
+{
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	justify-content: space-around;
+	overflow-x: auto;
+}
+.categoryBox
+{
+	flex: 0 0 auto;
+	width: 33.3333333%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	border-width: 0px;
+	border-color: black;
+	border-style: solid;
+	border-bottom-width: 0;
+	background: rgba(0,0,0,0);
+	overflow: auto;
+	cursor: pointer;
+}
+.categoryBox h2
+{
+	text-align: center;
+	margin: 0.2em;
+}
+.categoryBox:hover
+{
+	background: rgba(0,0,0,0.05);
+	color: rgba(0,0,0,0.90);
+}
+.categoryBoxMenu
+{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1em;
+	width: 100%;
+	height: 66%;
+}
+.categoryBoxMenuItem
+{
+	text-align: center;
+}
+.categoryBoxMenuItem:hover
+{
+	color: rgba(0,0,0,0.50);
+}
+
+/*JavaScript Disabled*/
+noscript
+{
+	display: none;
+}
+.categoryBox:hover noscript
+{
+	display: block;
+	color: red;
+	cursor: pointer;
+}
+/*--- Home Page ---*/
+
+/*--- Contact Info---*/
+.contactInfo
+{
+	top: 0;
+	color: black;
+}
+
+/*--- Page Defaults ---*/
+.page
+{
+	display: none;
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	background: rgba(0,0,0,0.85);
+	bottom: 10%;
+	left: 0;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+/*--- Page Defaults ---*/
+
+
+
+/*--- CV Page ---*/
+#cvPage
+{
+	padding: 0;
+}
+#cvPage iframe
+{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+/*--- CV Page ---*/
+
+
+
+/*--- Portfolio Page ---*/
+#portPage
+{
+	background: rgba(0,0,0,0.98);
+	color: white;
+}
+#portPage iframe
+{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+/*--- Portfolio Page ---*/

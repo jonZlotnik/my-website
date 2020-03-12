@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"/>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+	<script src="jquery.min.js"></script>
+	<script src='scripts.js'></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ 		ga('create', 'UA-60738812-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<title>Jon Zlotnik</title>
+</head>
+<body>
+
+<!-- Footer Navigation -->
+<div class='nav'>
+	<div class='navBTN' id='homeBTN'>home</div>
+	<h1 class='navTitle'>Jon Zlotnik</h1>
+	<div class='navBTN' id='infoBTN'>contact</div>
+</div>
+<!-- Footer Navigation -->
+
+
+
+<!-- Home Page -->
+<div class='homeScreen'>
+	<div class='categoryBox' id='cvBTN'>
+		<h2>Curriculum<br/>Vitae</h2>
+		<noscript>Please enable JavaScript!</noscript>
+	</div>
+	<div class='categoryBox' id='portBTN'>
+		<h2>Photography<br/>Portfolio</h2>
+		<noscript>Please enable JavaScript!</noscript>
+	</div>
+	<div class='categoryBox' id='projBTN'>
+		<h2>Interesting<br/>Projects</h2>
+		<noscript>Please enable JavaScript!</noscript>
+	</div>
+</div>
+<!-- Home Page -->
+
+
+
+<!-- CV Content -->
+<div class='page' id='cvPage'>
+
+	<iframe src="http://jonzlotnik.ca/pdfViewer/web/viewer.html"></iframe>
+
+</div>
+
+
+<!-- Portfolio Page -->
+<div class='page' id='portPage'>
+	<div id="portHeaderBG">.</div>
+	<h1><nobr>Capturing life:</nobr></h1>
+	<div class="reelSelector">
+		<div id="ourselves" onclick="changePhotoReels('ourselves')">
+		<nobr>for ourselves</nobr>
+		</div><div id="creatures" onclick="changePhotoReels('creatures')">
+		<nobr>among creatures</nobr>
+		</div><div id="nature" onclick="changePhotoReels('nature')">
+		<nobr>in nature</nobr>
+		</div><div id="parties" onclick="changePhotoReels('parties')">
+		<nobr>at parties</nobr>
+		</div><div id="stage" onclick="changePhotoReels('stage')">
+		<nobr>on stage</nobr>
+		</div>
+	</div>
+	<div class='reelShelf'>
+
+		<div class="reel ourselves" id="beachReel">
+		<div class="reelTitle">Sand &amp; Water</div>
+		<img class="photo" src="photos/ourselves/beach2.jpg" onclick="fullView('ourselves/beach2')" />
+		<img class="photo" src="photos/ourselves/beach3.jpg" onclick="fullView('ourselves/beach3')" />
+		</div>
+
+		<div class="reel ourselves" id="captainReel">
+		<div class="reelTitle">Captain M</div>
+		<img class="photo" src="photos/ourselves/captain1.jpg" onclick="fullView('ourselves/captain1')" />
+		<img class="photo" src="photos/ourselves/captain2.jpg" onclick="fullView('ourselves/captain2')" />
+		<img class="photo" src="photos/ourselves/captain3.jpg" onclick="fullView('ourselves/captain3')" />
+		<img class="photo" src="photos/ourselves/captain4.jpg" onclick="fullView('ourselves/captain4')" />
+		<img class="photo" src="photos/ourselves/captain5.jpg" onclick="fullView('ourselves/captain5')" />
+		<img class="photo" src="photos/ourselves/captain6.jpg" onclick="fullView('ourselves/captain6')" />
+		<img class="photo" src="photos/ourselves/captain7.jpg" onclick="fullView('ourselves/captain7')" />
+		<img class="photo" src="photos/ourselves/captain8.jpg" onclick="fullView('ourselves/captain8')" />
+		<img class="photo" src="photos/ourselves/captain9.jpg" onclick="fullView('ourselves/captain9')" />
+		<img class="photo" src="photos/ourselves/captain10.jpg" onclick="fullView('ourselves/captain10')" />
+		<img class="photo" src="photos/ourselves/captain11.jpg" onclick="fullView('ourselves/captain11')" />
+		</div>
+
+		<div class="reel ourselves">
+		<div class="reelTitle">More coming soon! I am currently updating my portfolio.</div>
+		</div>
+
+		<div class="reel creatures" id="horseReel">
+		<div class="reelTitle">Horse and Rider</div>
+		<img class="photo" src="photos/creatures/horse1.jpg" onclick="fullView('creatures/horse1')" />
+		<img class="photo" src="photos/creatures/horse2.jpg" onclick="fullView('creatures/horse2')" />
+		<img class="photo" src="photos/creatures/horse3.jpg" onclick="fullView('creatures/horse3')" />
+		<img class="photo" src="photos/creatures/horse4.jpg" onclick="fullView('creatures/horse4')" />
+		<img class="photo" src="photos/creatures/horse5.jpg" onclick="fullView('creatures/horse5')" />
+		<img class="photo" src="photos/creatures/horse6.jpg" onclick="fullView('creatures/horse6')" />
+		<img class="photo" src="photos/creatures/horse7.jpg" onclick="fullView('creatures/horse7')" />
+		<img class="photo" src="photos/creatures/horse8.jpg" onclick="fullView('creatures/horse8')" />
+		<img class="photo" src="photos/creatures/horse9.jpg" onclick="fullView('creatures/horse9')" />
+		</div>
+
+		<div class="reel creatures" id="snakeReel">
+		<div class="reelTitle">Snake and Charmer</div>
+		<img class="photo" src="photos/creatures/snake1.jpg" onclick="fullView('creatures/snake1')" />
+		<img class="photo" src="photos/creatures/snake2.jpg" onclick="fullView('creatures/snake2')" />
+		<img class="photo" src="photos/creatures/snake3.jpg" onclick="fullView('creatures/snake3')" />
+		</div>
+
+		<div class="reel creatures" id="birdReel">
+		<div class="reelTitle">Dodo the Bird</div>
+		<img class="photo" src="photos/creatures/bird1.jpg" onclick="fullView('creatures/bird1')" />
+		<img class="photo" src="photos/creatures/bird2.jpg" onclick="fullView('creatures/bird2')" />
+		<img class="photo" src="photos/creatures/bird3.jpg" onclick="fullView('creatures/bird3')" />
+		<img class="photo" src="photos/creatures/bird4.jpg" onclick="fullView('creatures/bird4')" />
+		<img class="photo" src="photos/creatures/bird5.jpg" onclick="fullView('creatures/bird5')" />
+		<img class="photo" src="photos/creatures/bird6.jpg" onclick="fullView('creatures/bird6')" />
+		<img class="photo" src="photos/creatures/bird7.jpg" onclick="fullView('creatures/bird7')" />
+		<img class="photo" src="photos/creatures/bird8.jpg" onclick="fullView('creatures/bird8')" />
+		<img class="photo" src="photos/creatures/bird9.jpg" onclick="fullView('creatures/bird9')" />
+		</div>
+
+		<div class="reel creatures">
+		<div class="reelTitle">More coming soon! I am currently updating my portfolio.</div>
+		</div>
+
+		<div class="reel nature">
+		<div class="reelTitle">Coming soon! I am currently updating my portfolio.</div>
+		</div>
+
+		<div class="reel parties" id="sweetSixteenReel">
+		<div class="reelTitle">Sweet 16</div>
+		<img class="photo" src="photos/parties/sweetSixteen1.jpg" onclick="fullView('parties/sweetSixteen1')" />
+		<img class="photo" src="photos/parties/sweetSixteen2.jpg" onclick="fullView('parties/sweetSixteen2')" />
+		<img class="photo" src="photos/parties/sweetSixteen3.jpg" onclick="fullView('parties/sweetSixteen3')" />
+		<img class="photo" src="photos/parties/sweetSixteen4.jpg" onclick="fullView('parties/sweetSixteen4')" />
+		<img class="photo" src="photos/parties/sweetSixteen5.jpg" onclick="fullView('parties/sweetSixteen5')" />
+		<img class="photo" src="photos/parties/sweetSixteen6.jpg" onclick="fullView('parties/sweetSixteen6')" />
+		<img class="photo" src="photos/parties/sweetSixteen7.jpg" onclick="fullView('parties/sweetSixteen7')" />
+		<img class="photo" src="photos/parties/sweetSixteen8.jpg" onclick="fullView('parties/sweetSixteen8')" />
+		<img class="photo" src="photos/parties/sweetSixteen9.jpg" onclick="fullView('parties/sweetSixteen9')" />
+		</div>
+
+		<div class="reel parties">
+		<div class="reelTitle">More coming soon! I am currently updating my portfolio.</div>
+		</div>
+
+		<div class="reel stage">
+		<div class="reelTitle">Coming soon! I am currently updating my portfolio.</div>
+		</div>
+
+	</div>
+	<div class='fullPicView' onclick='exitFullView()'>
+		<!--jQuery puts the image here-->
+	</div>
+</div>
+<!-- Portfolio Page -->
+
+
+
+<!-- Project Page -->
+<div class='page' id='projPage'>
+</div>
+
+</body>
+<html>

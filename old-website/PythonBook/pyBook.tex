@@ -1,0 +1,62 @@
+\documentclass{book}
+
+\usepackage{listings}
+
+\title{pyBook}
+\author{JonnyZ}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+
+
+
+\chapter{pyBasics}
+
+\section{Hello World}
+The Hello World program is very simple, it only needs two lines.
+The first line begins with a `shebang' (the symbol \#! - also known as a hashbang)
+followed by the path to the Python interpreter.
+The program loader uses this line to work out what the rest of the lines need to be interpreted with.
+If you're running this in an IDE like IDLE, you don't necessarily need to do this.
+
+The code that is actually read by the Python interpreter is only a single line.
+We're passing the value Hello World to the print function by playing it in brackets immediately after we've called the print function.
+Hello World is enclosed in quotation marks to indicate that it is a literal value and should not be interpreted as source code.
+As expected, the print function in Python prints any value that gets passed to it from the console.
+
+\begin{lstlisting}
+#!/usr/bin/env python2
+print(``Hello World'')
+\end{lstlisting}
+
+You can run the Hello World program by prefixing its filename with ./
+
+\section{Variables and data types}
+A variable is a name in source code that is associated with an area in memory that you can use to store data, 
+which is then called upon throughout the code. 
+The data can be one of many types including:
+
+\begin{table}{l|l}
+
+Integer & Stores whole numbers\\\hline
+Float & Stores decimal numbers\\\hline
+Boolean & Can have a value of True or False\\\hline
+String & Stores a collection of characters. ``Hello World'' is a string\\
+
+\end{table}
+
+As well as these main data types, there are sequence types (technically, a string is a sequence type but is so commonly used we've classed iit as a main data type):
+
+\begin{table}{l|l}
+
+List & Contains a collection of data in a specific order\\\hline
+Tuple & Contains a collection of immutable data in a specific order.\\
+
+\end{table}
+
+\end{document}

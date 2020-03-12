@@ -1,0 +1,3 @@
+\contentsline {chapter}{\numberline {1}pyBasics}{5}
+\contentsline {section}{\numberline {1.1}Hello World}{5}
+\contentsline {section}{\numberline {1.2}Variables and data types}{5}
