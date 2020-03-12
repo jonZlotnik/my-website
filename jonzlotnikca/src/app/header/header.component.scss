@@ -1,0 +1,7 @@
+@import '../../constants.scss';
+
+#header-wrapper {
+    border-bottom: 1px solid #5A5A5A;
+    height: $v-header-height;
+    @media (orientation: landscape){height: $h-header-height;} 
+}
