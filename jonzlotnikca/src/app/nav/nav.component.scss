@@ -3,6 +3,11 @@
   flex-flow: row nowrap;
   a {
     margin: 0 3vw 2vw 0;
+  }
+  .nav-btn-enabled {
     cursor: pointer;
+  }
+  .nav-btn-disabled {
+    cursor: not-allowed;
   }
 }

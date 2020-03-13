@@ -23,3 +23,9 @@
 
   @return $number;
 }
+
+@mixin page-component-host() {
+  display: flex;
+  flex-flow: column nowrap;
+  //border: red dotted thick;
+}
