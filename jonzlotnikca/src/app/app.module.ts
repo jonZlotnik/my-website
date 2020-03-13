@@ -9,6 +9,7 @@ import { ProfilePictureComponent } from './profile-picture/profile-picture.compo
 import { NavComponent } from './nav/nav.component';
 import { TitleComponent } from './title/title.component';
 import { SubTitleComponent } from './sub-title/sub-title.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SubTitleComponent } from './sub-title/sub-title.component';
     ProfilePictureComponent,
     NavComponent,
     TitleComponent,
-    SubTitleComponent
+    SubTitleComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

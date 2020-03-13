@@ -1,7 +1,11 @@
-@import '../../constants.scss';
+@import '../../global';
 
 #header-wrapper {
-    border-bottom: 1px solid #5A5A5A;
-    height: $v-header-height;
-    @media (orientation: landscape){height: $h-header-height;} 
+  border-bottom: 1px solid #5A5A5A;
+  height: $v-header-height;
+  @media (orientation: landscape){height: $h-header-height;}
+
+  padding-left: $profile-picture-size + 7.5vw;
+  display: flex;
+  align-items: flex-end;
 }

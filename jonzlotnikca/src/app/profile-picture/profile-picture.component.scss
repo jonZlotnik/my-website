@@ -1,16 +1,16 @@
-@import '../../constants.scss';
+@import '../../global';
 
 #profile-picture-container{
     position: absolute;
     left: 0;
     top: 0;
     height: $v-header-height * 2;
-    @media (orientation: landscape){height: $h-header-height * 2;} 
-    
-    
+    @media (orientation: landscape){height: $h-header-height * 2;}
+
+
     display: flex;
     align-items: center;
-    
+
     #profile-picture-wrapper{
         padding-left: 5vw;
         background-color: $app-background-color;
@@ -20,5 +20,5 @@
             height: $profile-picture-size;
         }
     }
-    
+
 }

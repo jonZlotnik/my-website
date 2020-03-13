@@ -1,8 +1,8 @@
-@import '../../constants.scss';
+@import '../../global';
 
 #sub-header-wrapper {
 
 
-    padding-left: $profile-picture-size + 6vw;
+    padding-left: $profile-picture-size + 7.5vw;
     display: flex;
 }

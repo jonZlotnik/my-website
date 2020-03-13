@@ -1,44 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
-@import './constants.scss';
-
+@import 'global';
+@import "mixins";
 @font-face {
-    font-family: 'SegoeUILight';
-    src: url(./assets/fonts/segoeuil.ttf);
+  font-family: 'SegoeUILight';
+  src: url(./assets/fonts/segoeuil.ttf);
 }
 @font-face {
-    font-family: 'SegoeUISemiLight';
-    src: url(./assets/fonts/segoeuisl.ttf);
+  font-family: 'SegoeUISemiLight';
+  src: url(./assets/fonts/segoeuisl.ttf);
 }
 @font-face {
-    font-family: 'SegoeUI';
-    src: url(./assets/fonts/segoeui.ttf);
+  font-family: 'SegoeUI';
+  src: url(./assets/fonts/segoeui.ttf);
 }
 @font-face {
-    font-family: 'SegoeUISemiBold';
-    src: url(./assets/fonts/seguisb.ttf);
+  font-family: 'SegoeUISemiBold';
+  src: url(./assets/fonts/seguisb.ttf);
 }
 @font-face {
-    font-family: 'SegoeUIBold';
-    src: url(./assets/fonts/segoeuib.ttf);
+  font-family: 'SegoeUIBold';
+  src: url(./assets/fonts/segoeuib.ttf);
 }
 
 
 body {
-    background-color: $app-background-color;
-    color: #707070;
+  background-color: $app-background-color;
+  color: #707070;
 
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 
-    font-family: 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
-    font-family: 'SegoeUI';
-    font-size: 28pt;
-    margin: 0;
+  font-family: 'SegoeUI';
+  @include fluid-type(font-size, 320px, 1920px, 18pt, 76pt);
+  font-weight: normal;
+  margin: 0;
 }
 h2 {
-    font-family: 'SegoeUILight';
-    font-size: 24pt;
-    margin: 0;
+  font-family: 'SegoeUILight';
+  @include fluid-type(font-size, 320px, 1920px, 10pt, 48pt);
+  font-weight: normal;
+  margin: 0;
+}
+h3{
+  font-family: 'SegoeUI';
+  @include fluid-type(font-size, 320px, 1920px, 8pt, 40pt);
+  font-weight: normal;
+  margin: 0;
 }
