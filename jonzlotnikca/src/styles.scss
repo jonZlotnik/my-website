@@ -1,10 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 @import './constants.scss';
 
+@font-face {
+    font-family: 'SegoeUILight';
+    src: url(./assets/fonts/segoeuil.ttf);
+}
+@font-face {
+    font-family: 'SegoeUISemiLight';
+    src: url(./assets/fonts/segoeuisl.ttf);
+}
+@font-face {
+    font-family: 'SegoeUI';
+    src: url(./assets/fonts/segoeui.ttf);
+}
+@font-face {
+    font-family: 'SegoeUISemiBold';
+    src: url(./assets/fonts/seguisb.ttf);
+}
+@font-face {
+    font-family: 'SegoeUIBold';
+    src: url(./assets/fonts/segoeuib.ttf);
+}
+
+
 body {
     background-color: $app-background-color;
     color: #707070;
 
     margin: 0;
     box-sizing: border-box;
+
+    font-family: 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-family: 'SegoeUI';
+    font-size: 28pt;
+    margin: 0;
+}
+h2 {
+    font-family: 'SegoeUILight';
+    font-size: 24pt;
+    margin: 0;
 }

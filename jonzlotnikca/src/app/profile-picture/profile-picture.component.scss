@@ -16,8 +16,8 @@
         background-color: $app-background-color;
 
         #profile-picture {
-            width: 30vw;
-            height: 30vw;
+            width: $profile-picture-size;
+            height: $profile-picture-size;
         }
     }
     
