@@ -34,19 +34,24 @@ body {
 }
 h1 {
   font-family: 'SegoeUI';
-  @include fluid-type(font-size, 320px, 1920px, 18pt, 52pt);
+  @include fluid-type(font-size, 320px, 1920px, 18pt, 72pt);
   font-weight: normal;
   margin: 0;
 }
 h2 {
   font-family: 'SegoeUILight';
-  @include fluid-type(font-size, 320px, 1920px, 12pt, 32pt);
+  @include fluid-type(font-size, 320px, 1920px, 10pt, 42pt);
   font-weight: normal;
   margin: 0;
 }
 h3{
-  font-family: 'SegoeUILight';
-  @include fluid-type(font-size, 320px, 1920px, 8pt, 26pt);
+  font-family: 'SegoeUI';
+  @include fluid-type(font-size, 320px, 1920px, 8pt, 32pt);
   font-weight: normal;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
 }
