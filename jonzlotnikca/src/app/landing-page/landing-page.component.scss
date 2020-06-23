@@ -1,4 +1,8 @@
-@import "../../mixins";
-:host {
-  @include page-component-host()
+content-wrapper {
+  height: 100%;
+  border: red thin solid;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
