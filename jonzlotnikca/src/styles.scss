@@ -11,6 +11,11 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a {
+  color: #707070;
+  text-decoration: none;
+}
+
 p {
   font-weight: 300;
 }
@@ -26,5 +31,5 @@ h2 {
 }
 h3 {
   font-weight: 300;
-  @include fluid.fluid-type(font-size, 320px, 1280px, 17pt, 17pt);
+  @include fluid.fluid-type(font-size, 320px, 1280px, 16pt, 17pt);
 }
