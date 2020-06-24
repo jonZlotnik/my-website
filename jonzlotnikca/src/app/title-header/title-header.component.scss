@@ -1,0 +1,17 @@
+@use '../../scss/modules/_fluid.scss';
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  @include fluid.fluid-type(margin-top, 320px, 1280px, 60px, 80px);
+
+  border-bottom: 1px solid #707070;
+  margin-bottom: 0;
+
+  cursor: pointer;
+}
+h2 {
+  margin-top: 0;
+}
