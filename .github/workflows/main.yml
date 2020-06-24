@@ -30,11 +30,11 @@ jobs:
           npm install
           ng build --prod
           cd ..
-      - name: Deployment setup
+      - name: Deployment
         run: |
           cd jonzlotnikca
-          firebase use "jonzlotnikca"
-          firebase deploy
+          firebase use --add "jonzlotnikca"
+          firebase deploy --only hosting
           cd ..
           
           
