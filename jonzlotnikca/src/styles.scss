@@ -1,52 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
-@import 'global';
-@import "mixins";
-@font-face {
-  font-family: 'SegoeUILight';
-  src: url(./assets/fonts/segoeuil.ttf);
-}
-@font-face {
-  font-family: 'SegoeUISemiLight';
-  src: url(./assets/fonts/segoeuisl.ttf);
-}
-@font-face {
-  font-family: 'SegoeUI';
-  src: url(./assets/fonts/segoeui.ttf);
-}
-@font-face {
-  font-family: 'SegoeUISemiBold';
-  src: url(./assets/fonts/seguisb.ttf);
-}
-@font-face {
-  font-family: 'SegoeUIBold';
-  src: url(./assets/fonts/segoeuib.ttf);
-}
+@use 'scss/modules/fluid';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
 body {
-  background-color: $app-background-color;
+  margin: 0;
+  background-color: #1B1B1B;
+
   color: #707070;
-
-  margin: 0;
-  box-sizing: border-box;
-
-  font-family: 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
+
+a {
+  color: #707070;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 300;
+}
+
 h1 {
-  font-family: 'SegoeUI';
-  @include fluid-type(font-size, 320px, 1920px, 18pt, 76pt);
-  font-weight: normal;
-  margin: 0;
+  font-weight: 300;
+  @include fluid.fluid-type(font-size, 320px, 1280px, 25pt, 32pt);
 }
+
 h2 {
-  font-family: 'SegoeUILight';
-  @include fluid-type(font-size, 320px, 1920px, 10pt, 48pt);
-  font-weight: normal;
-  margin: 0;
+  font-weight: 300;
+  @include fluid.fluid-type(font-size, 320px, 1280px, 16pt, 17pt);
 }
-h3{
-  font-family: 'SegoeUI';
-  @include fluid-type(font-size, 320px, 1920px, 8pt, 40pt);
-  font-weight: normal;
-  margin: 0;
+h3 {
+  font-weight: 300;
+  @include fluid.fluid-type(font-size, 320px, 1280px, 16pt, 17pt);
 }
