@@ -10,6 +10,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { PhotographyPageComponent } from './photography-page/photography-page.component';
+import { ProjectSummaryComponent } from './projects-page/project-summary/project-summary.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PhotographyPageComponent } from './photography-page/photography-page.co
     LandingPageComponent,
     ResumePageComponent,
     ProjectsPageComponent,
-    PhotographyPageComponent
+    PhotographyPageComponent,
+    ProjectSummaryComponent
   ],
   imports: [
     BrowserModule,
