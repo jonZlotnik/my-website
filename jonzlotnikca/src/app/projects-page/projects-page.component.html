@@ -1,1 +1,10 @@
 <app-title-header [subtitle]="'Projects'"></app-title-header>
+<div id="summary-list">
+
+  <app-project-summary *ngFor="let n of [1, 2, 3, 4, 5, 6]"
+    [title]="'Project 1'"
+    [summary]="'This is the summary of Project 1.'">
+  </app-project-summary>
+
+</div>
+
