@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 230px;
+
+  h4 {
+    margin: 2em auto 0 auto;
+  }
+}

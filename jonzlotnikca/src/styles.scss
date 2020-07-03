@@ -19,6 +19,7 @@ a {
 
 p {
   font-weight: 300;
+  @include fluid.fluid-type(font-size, 320px, 1280px, 12pt, 14pt);
 }
 
 h1 {
@@ -33,4 +34,8 @@ h2 {
 h3 {
   font-weight: 300;
   @include fluid.fluid-type(font-size, 320px, 1280px, 16pt, 17pt);
+}
+h4 {
+  font-weight: 400;
+  @include fluid.fluid-type(font-size, 320px, 1280px, 15pt, 16pt);
 }
