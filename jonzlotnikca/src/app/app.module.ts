@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { ContactFooterComponent } from './contact-footer/contact-footer.component';
 import { TitleHeaderComponent } from './title-header/title-header.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { ResumePageComponent } from './resume-page/resume-page.component';
+import { AboutMePageComponent } from './about-me-page/about-me-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { PhotographyPageComponent } from './photography-page/photography-page.component';
 import { ProjectSummaryComponent } from './projects-page/project-summary/project-summary.component';
+import { AboutMeSummaryComponent } from './about-me-page/about-me-summary/about-me-summary.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,11 @@ import { ProjectSummaryComponent } from './projects-page/project-summary/project
     ContactFooterComponent,
     TitleHeaderComponent,
     LandingPageComponent,
-    ResumePageComponent,
+    AboutMePageComponent,
     ProjectsPageComponent,
     PhotographyPageComponent,
-    ProjectSummaryComponent
+    ProjectSummaryComponent,
+    AboutMeSummaryComponent
   ],
   imports: [
     BrowserModule,
