@@ -1,1 +1,10 @@
 <app-title-header [subtitle]="'Projects'"></app-title-header>
+<div id="summary-list">
+
+  <app-project-summary *ngFor="let id of projectProviderService.getProjectIds()"
+    [title]="projectProviderService.getProjectTitle(id)"
+    [summary]="projectProviderService.getProjectSummary(id)">
+  </app-project-summary>
+
+</div>
+
