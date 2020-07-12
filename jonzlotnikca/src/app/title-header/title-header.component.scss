@@ -1,18 +1,24 @@
 @use '../../scss/modules/_fluid.scss';
 @use '../../scss/modules/_const.scss';
 
-h1, h2 {
-  text-align: center;
+:host {
+  box-sizing: border-box;
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  h1 {
+    @include fluid.fluid-type(margin-top, 320px, 1280px, 60px, 80px);
+
+    border-bottom: 1px solid const.$main-text-color;
+    margin-bottom: 0;
+
+    cursor: pointer;
+  }
+  h2 {
+    margin-top: 0;
+  }
 }
 
-h1 {
-  @include fluid.fluid-type(margin-top, 320px, 1280px, 60px, 80px);
 
-  border-bottom: 1px solid const.$main-text-color;
-  margin-bottom: 0;
-
-  cursor: pointer;
-}
-h2 {
-  margin-top: 0;
-}
