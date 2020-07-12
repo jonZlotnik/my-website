@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-contact-footer',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-footer.component.scss'],
 })
 export class ContactFooterComponent implements OnInit {
+
+  @Input() hidden = false;
 
   constructor() { }
 

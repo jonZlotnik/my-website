@@ -6,6 +6,8 @@
 
 body {
   margin: 0;
+  overflow-y: scroll;
+
   background-color: #1B1B1B;
 
   color: const.$main-text-color ;

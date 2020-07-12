@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ResumeProviderService} from '../resume-provider.service';
 
 @Component({
   selector: 'app-resume-page',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public resumeProviderService: ResumeProviderService) { }
 
   ngOnInit(): void {
   }
