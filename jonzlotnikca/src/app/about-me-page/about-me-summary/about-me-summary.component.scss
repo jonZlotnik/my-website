@@ -1,0 +1,13 @@
+@use '../../../scss/modules/fluid';
+
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  @include fluid.fluid-type(width, 320px, 1280px, 230px, 520px);
+
+  h4 {
+    text-align: left;
+    width: 100%;
+    margin: 3em auto 0 auto;
+  }
+}
